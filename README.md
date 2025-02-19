@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: center; gap: 10px; padding-bottom: 20px;">
+<div style="display: flex; justify-content: between; gap: 10px; padding-bottom: 20px;">
   <a href="https://github.com/derian-cordoba/secure-keys-generator/blob/main/LICENSE" title="license">
     <img alt="LICENSE MIT" src="https://img.shields.io/badge/license-MIT-428f7e.svg?logo=open%20source%20initiative&logoColor=white&labelColor=555555">
   </a>
@@ -12,7 +12,7 @@
 </div>
 
 <div style="display: flex; justify-content: center;">
-  <img src="https://github.com/user-attachments/assets/107efc59-3f31-4446-bf29-ef751cef11b4" alt="Homebrew Tap for Secure Keys" width="560">
+  <img src="https://github.com/user-attachments/assets/107efc59-3f31-4446-bf29-ef751cef11b4" alt="Homebrew Tap for Secure Keys">
 </div>
 
 <div style="display: flex; justify-content: center;">
@@ -37,7 +37,7 @@ brew update
 
 ### Add this tap
 
-Fetch the formulae in this tap:
+Fetch the formula in this tap:
 
 ```bash
 brew tap derian-cordoba/secure-keys
@@ -70,7 +70,3 @@ You can see more information about the usage of `secure-keys` by visiting the [o
 ## License
 
 This project is licensed under the MIT [License](LICENSE).
-
-```
-
-```
