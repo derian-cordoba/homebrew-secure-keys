@@ -60,7 +60,11 @@ brew install derian-cordoba/secure-keys/secure-keys@1.0.4
 - Test your `secure-keys` installlation:
 
 ```bash
-which secure-keys
+secure-keys --help
+
+# Or
+
+secure-keys --version
 ```
 
 ## Usage
