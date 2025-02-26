@@ -51,10 +51,10 @@ brew tap derian-cordoba/secure-keys
 brew install derian-cordoba/secure-keys/secure-keys
 ```
 
-- For example, to install `Secure Keys 1.0.4`:
+- For example, to install `Secure Keys v1.1.3`:
 
 ```bash
-brew install derian-cordoba/secure-keys/secure-keys@1.0.4
+brew install derian-cordoba/secure-keys/secure-keys@1.1.3
 ```
 
 - Test your `secure-keys` installlation:
