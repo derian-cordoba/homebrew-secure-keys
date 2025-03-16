@@ -1,9 +1,10 @@
 class SecureKeys < Formula
   desc 'Secure Keys is a simple tool to manage your secret keys in your iOS project'.freeze
   homepage 'https://github.com/derian-cordoba/secure-keys'.freeze
-  url 'https://github.com/derian-cordoba/secure-keys/archive/refs/tags/v1.1.4.tar.gz'.freeze
-  sha256 'a197197ed370d2cd4ffd528ba4b26a7e8c646df6ec7cb8542c307ef6648e66a8'.freeze
+  url 'https://github.com/derian-cordoba/secure-keys/archive/refs/tags/v1.1.5.tar.gz'.freeze
+  sha256 'd5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed'.freeze
   license 'MIT'.freeze
+  head 'https://github.com/derian-cordoba/secure-keys'.freeze, branch: 'main'.freeze
 
   depends_on 'ruby@3.3'
   depends_on macos: :sonoma
@@ -12,7 +13,8 @@ class SecureKeys < Formula
     ENV['GEM_HOME'] = libexec
     ENV['GEM_PATH'] = libexec
 
-    system 'gem', 'install', 'secure-keys', '-v', '1.1.4'
+    system 'gem', 'build', 'secure-keys.gemspec'
+    system 'gem', 'install', "secure-keys-#{version}.gem", '--no-document'
 
     (bin / 'secure-keys').write_env_script libexec / 'bin/secure-keys',
                                            PATH: "#{Formula['ruby@3.3'].opt_bin}:#{libexec}/bin:$PATH",
@@ -25,5 +27,7 @@ class SecureKeys < Formula
     system 'secure-keys', '--help'
     system 'secure-keys', '--version'
     system 'secure-keys', '--xcframework', '--help'
+
+    assert_match "secure-keys version: v#{version}", shell_output("#{bin}/secure-keys --version")
   end
 end
