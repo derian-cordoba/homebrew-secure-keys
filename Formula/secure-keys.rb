@@ -1,8 +1,8 @@
 class SecureKeys < Formula
   desc 'Secure Keys is a simple tool to manage your secret keys in your iOS project'.freeze
   homepage 'https://github.com/derian-cordoba/secure-keys'.freeze
-  url 'https://github.com/derian-cordoba/secure-keys/archive/refs/tags/v1.1.5.tar.gz'.freeze
-  sha256 'd8d3d976b1e3b7a47c6636f0ac2f9c5d51b45c473f02bc45e921c7bfcc17f52e'.freeze
+  url 'https://github.com/derian-cordoba/secure-keys/archive/refs/tags/v1.1.6.tar.gz'.freeze
+  sha256 '08e737c959e83b96eeecde99c7ed24c29c384041079693e4523b6349b2b3768b'.freeze
   license 'MIT'.freeze
   head 'https://github.com/derian-cordoba/secure-keys'.freeze, branch: 'main'.freeze
 
